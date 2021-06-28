@@ -9,6 +9,7 @@ The purpose if this analysis is to determine resampling models, SMOTEENN Algorit
 Below are the balanced accuracy scores and the precision and recall scores of all six machine learning models
 
 _- Smote Model:_
+
 From the analysis performed using the Smote model (and shown in the image below), we observe a balanced accuracy score of approximately 66%. Also, the high risk precision is at 1% with 63% sensitivity which makes a F1 of 2% only. Lastly, as a result of the majority low risk population, we can observe a precision of about 100% with a sensitivity of 66%.
 
 <img width="300" alt="Smote" src="https://user-images.githubusercontent.com/79670933/123569338-23c24d00-d794-11eb-9548-6337a48aa5e7.png">
@@ -27,7 +28,7 @@ Based on the BalanceRandomForestClassifier analysis, we can observe a balanced a
 
 _- ClusterCentroids Model:_
 
-The result of the ClusterCentroids analysis shows a balanced accuracy score of approximately 52%. Also, high risk precision is at 1% with 61% sensitivity which makes a F1 of 1%. We can also observe a low risk sensitivity of 42% with 100% precision. Below is a snapshot of the result.
+The result of the ClusterCentroids analysis shows a balanced accuracy score of approximately 51.5%. Also, high risk precision is at 1% with 61% sensitivity which makes a F1 of 1%. We can also observe a low risk sensitivity of 42% with 100% precision. Below is a snapshot of the result.
 
 <img width="300" alt="ClusterCentroids" src="https://user-images.githubusercontent.com/79670933/123569341-245ae380-d794-11eb-8779-6cc557d0237d.png">
 
