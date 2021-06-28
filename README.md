@@ -2,7 +2,7 @@
 
 **Overview of the analysis:**
 
-The purpose if this analysis is to determine resampling models, SMOTEENN Algorithm and Ensemble Classifiers should be used to predict credit risk. This analysis uses imbalanced-learn and scikit-learn libraries to build and evaluate models using resampling. Also, using the credit card credit dataset from LendingClub, a peer-to-peer lending services company, this analysis oversamples the data using the RandomOverSampler and SMOTE algorithms, and undersamples the data using the ClusterCentroids algorithm. Additionally, a combinatorial approach of over- and undersampling using the SMOTEENN algorithm is used. This analysis also compares two new machine learning models that reduce bias, BalancedRandomForestClassifier and EasyEnsembleClassifier, to predict credit risk. The performance of these models is evaluated, and a written recommendation is included, on whether they should be used to predict credit risk.
+The purpose if this analysis is to determine whether resampling models, SMOTEENN Algorithm and Ensemble Classifiers should be used to predict credit risk. This analysis uses imbalanced-learn and scikit-learn libraries to build and evaluate models using resampling. Also, using the credit card credit dataset from LendingClub, a peer-to-peer lending services company, this analysis oversamples the data using the RandomOverSampler and SMOTE algorithms, and undersamples the data using the ClusterCentroids algorithm. Additionally, a combinatorial approach of over- and undersampling using the SMOTEENN algorithm is used. This analysis also compares two new machine learning models that reduce bias, BalancedRandomForestClassifier and EasyEnsembleClassifier, to predict credit risk. The performance of these models is evaluated, and a written recommendation is included, on whether they should be used to predict credit risk.
 
 **Results:**
 
@@ -46,4 +46,7 @@ The result of the RandomOverSample model analysis shows a balanced accuracy scor
 
 
 **Summary:**
-Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. If you do not recommend any of the models, justify your reasoning.
+
+The 6 models used for the credit risk prediction analysis show a low or weak precision in determining if a credit risk is high. 
+
+However, the EasyEnsembleClassifier model appears to be most effective in showing the sensitivity for the high risk credits as it shows a recall of 92%. The precision rate for this model is however low at 9%, which means many low risk credits are still falsely detected. This could impact the credibility of the information provided by LendingClub. As such, in the absence of better or reliable models, I would recommend using the EasyEnsembleClassifier model.
