@@ -49,4 +49,4 @@ The result of the RandomOverSample model analysis shows a balanced accuracy scor
 
 The 6 models used for the credit risk prediction analysis show a low or weak precision in determining if a credit risk is high. 
 
-However, the EasyEnsembleClassifier model appears to be most effective in showing the sensitivity for the high risk credits as it shows a recall of 92%. The precision rate for this model is however low at 9%, which means many low risk credits are still falsely detected. This could impact the credibility of the information provided by LendingClub. As such, in the absence of better or reliable models, I would recommend using the EasyEnsembleClassifier model.
+However, the EasyEnsembleClassifier model appears to be most effective in showing the sensitivity for the high risk credits as it shows a recall of 92%. The precision rate for this model is however low at 9%, which means many low risk credits are still falsely detected. This could impact the credibility of the information provided by LendingClub. In the absence of better or reliable models, I would recommend using the EasyEnsembleClassifier model.
